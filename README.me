@@ -1,0 +1,20 @@
+# Google Sheets Inventory API
+
+Minimal Node.js server with Express to write entries into a Google Sheet.
+
+## Usage (deploy your own)
+
+1. Create Google Cloud Service Account at https://console.cloud.google.com
+2. Create Key as JSON and download
+3. Rename file to service-account.json and deploy with this app. Your details are in there, as well as your client email: ``"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/<your client_email>"``
+
+
+## Usage (deployed app)
+
+1. Share your Google Sheet with the `service-account.json` address and give edit permissions.
+2. Create a `.env` file based on `.env.example` (set SHEET_ID).
+3. Start locally:
+   ```bash
+   npm install
+   node index.js
+   ```

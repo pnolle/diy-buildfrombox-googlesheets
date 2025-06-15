@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Parts Inventory",
+  "name_for_model": "parts_inventory",
+  "description_for_human": "Füge Teile in dein Google Sheet-Inventar ein.",
+  "description_for_model": "Add parts to a user-specified Google Sheet inventory via POST API.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://deine-render-url.onrender.com/openapi.yaml"
+  },
+  "logo_url": "https://deine-render-url.onrender.com/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
