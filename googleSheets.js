@@ -1,6 +1,11 @@
 const { google } = require('googleapis');
 const sheets = google.sheets('v4');
-const key = require('./service-account.json');
+let key;
+if (process.env.GOOGLE_SERVICE_ACCOUNT) {
+  key = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
+} else {
+  key = require('./service-account.json');
+}
 
 const auth = new google.auth.JWT(
   key.client_email,
